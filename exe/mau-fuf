@@ -5,7 +5,7 @@ require 'optparse'
 opt = OptionParser.new
 @opts = {
   type:  ENV['MRU_FUF_TYPE']  || Mru::Fuf::ITEMS,
-  limit: ENV['MRU_FUF_LIMIT'].to_i || 1000,
+  limit: ENV['MRU_FUF_LIMIT'] || 1000,
 }
 opt.on('-t type', "--type=#{Mru::Fuf.types.join(",")}") {|v| @opts[:type] = v }
 opt.on('-l num', "--limit=1000") {|v| @opts[:limit] = v.to_i }

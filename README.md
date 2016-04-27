@@ -26,7 +26,22 @@ mru-fuf --help
 ```
 
 ```
+Usage: mru-fuf [options]
+    -t, --type=items,itemdirs
+    -l, --limit=1000
+    -r, --reverse
 ```
+
+Search MRU Files with fzf.
+
+```
+mru-fuf | fzf
+```
+
+## FuzzyFinder and fzf
+
+* https://github.com/junegunn/fzf
+* https://github.com/vim-scripts/FuzzyFinder
 
 ## Development
 
